@@ -3,6 +3,7 @@ package survey;
 import survey.SaveMethods.SurveySaveMethod;
 import survey.SaveMethods.AsZipFile;
 import java.io.File;
+import survey.SaveMethods.AsTxtFile;
 
 /**
  * Performs all kind of read/write operations related to surveys and files.
@@ -122,6 +123,7 @@ public class SurveyIO {
 	{
 		return switch(extension) {
 			case ".zip" -> new AsZipFile();
+			case ".txt" -> new AsTxtFile();
 			default -> 
 				throw new UnsupportedOperationException("Can't read survey with extension: "+extension);
 		};
@@ -131,6 +133,7 @@ public class SurveyIO {
 	{
 		final SurveySaveMethod[] methods=new SurveySaveMethod[]{
 			new AsZipFile(),
+			new AsTxtFile()
 		};
 		return methods;
 	}

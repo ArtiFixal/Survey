@@ -8,6 +8,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 import java.util.concurrent.RejectedExecutionException;
+import survey.SaveMethods.AsTxtFile;
 import survey.SaveMethods.AsZipFile;
 import survey.SaveMethods.ResultSaveMethod;
 
@@ -68,6 +69,7 @@ public class ResultIO {
 	{
 		return switch(extension) {
 			case ".zip" -> new AsZipFile();
+			case ".txt" -> new AsTxtFile();
 			default -> throw new UnsupportedOperationException("Can't read survey result with extension: "+extension);
 		};
 	}
