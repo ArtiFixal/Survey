@@ -16,11 +16,15 @@ Aplication which allows conducting surveys and creation of them.
 
 ## Gallery
 Pollster version of main panel:
+
 ![Pollster app main window](https://raw.githubusercontent.com/ArtiFixal/Survey/main/images/pollsterApp.jpg)
 
 Survey creation:
+
 ![Just created new survey](https://raw.githubusercontent.com/ArtiFixal/Survey/main/images/surveyCreation.jpg)
+
 ![New survey with filled fields](https://raw.githubusercontent.com/ArtiFixal/Survey/main/images/creatingSurvey.jpg)
 
 Displaying survey results:
+
 ![Survey results](https://raw.githubusercontent.com/ArtiFixal/Survey/main/images/checkingResults.jpg)
